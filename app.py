@@ -5,8 +5,7 @@ Flask web app for Meesho PDF extraction:
 """
 
 from flask import Flask, render_template, request
-from manifest_parser import parse_manifest
-from labels_parser import parse_labels
+from parsers import parse_manifest, parse_labels
 from werkzeug.utils import secure_filename
 import os
 import traceback
